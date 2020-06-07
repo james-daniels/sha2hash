@@ -1,5 +1,7 @@
 # sha2hash
 
+Lesson Excercise 4.2 from [The Go Programming Language](http://www.gopl.io/) book.
+
 ### Usage:
 Build the binary
 ```Bash
@@ -19,6 +21,7 @@ $ ./sha2hash 56 384
 ```
 
 Options are 256 (Default), 384, and 512.
+
 
 ```Go
 package main
