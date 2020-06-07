@@ -1,5 +1,25 @@
 # sha2hash
 
+### Usage:
+Build the binary
+```Bash
+$ go build -o sha2hash
+```
+
+Run the program
+```Bash
+$ ./sha2hash 56
+7688b6ef52555962d008fff894223582c484517cea7da49ee67800adc7fc8866
+```
+
+OR
+```Bash
+$ ./sha2hash 56 384
+0c5fb0ea6eba72f2dcbe1985e4bd011132c5d099f2486f63e3a8f554ebe50e6fae1e2b0e454b695b5acd318a7aa6d5e9
+```
+
+Options are 256 (Default), 384, and 512.
+
 ```Go
 package main
 
