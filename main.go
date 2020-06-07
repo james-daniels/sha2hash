@@ -11,7 +11,7 @@ func main() {
 	var output interface{}
 
 	if len(os.Args) == 1 {
-		fmt.Println("Enter string to convert")
+		fmt.Println("Enter value to convert.")
 		os.Exit(0)
 	}
 
@@ -26,7 +26,8 @@ func main() {
 		case "512":
 			output = sha512.Sum512([]byte(os.Args[1]))
 		default:
-			output = sha256.Sum256([]byte(os.Args[1]))
+			fmt.Println("Only 256 (Default), 384, and 512.")
+			os.Exit(0)
 		}
 	}
 	fmt.Printf("%x\n", output)
